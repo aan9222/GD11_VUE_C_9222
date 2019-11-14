@@ -17,7 +17,13 @@ const routes = [
                 name: 'UserController',           
                 path: '',           
                 component: loadView('userController')         
-            }       
+            },       
+
+            {
+                name: 'BranchesController',
+                path: '/branches',
+                component: loadView('branchesController')
+            }    
         ]     
     },   
 ]   
@@ -25,4 +31,4 @@ Vue.use(Router)
  
   const router = new Router({mode: 'history', routes: routes}) 
  
-  export default router 
+  export default router
